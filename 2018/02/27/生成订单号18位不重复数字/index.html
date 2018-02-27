@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="JAVA," />
+  <meta name="keywords" content="java," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Thread线程停止在Java中有以下3种方法可以终止正在运行的线程 使用退出标志，是线程正常退出，也就是当run方法完成后线程终止 使用stop方法强行终止线程，但是不推荐使用这个方法，因为stop和suspend及resume一样，都是作废过期的方法，使用它们可能产生不可预料的结果 使用interrupt方法终端线程">
-<meta name="keywords" content="JAVA">
+<meta name="description" content="最近项目中需要用到订单号,在csdn上找到一款根据时间,id,以及machineId,如果并发过大,也可以再用上thread的id,下面贴出代码">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java线程结束">
-<meta property="og:url" content="sxl5513.github.io/2017/09/14/java线程结束/index.html">
+<meta property="og:title" content="生成订单号18位不重复数字">
+<meta property="og:url" content="sxl5513.github.io/2018/02/27/生成订单号18位不重复数字/index.html">
 <meta property="og:site_name" content="有颜之地">
-<meta property="og:description" content="Thread线程停止在Java中有以下3种方法可以终止正在运行的线程 使用退出标志，是线程正常退出，也就是当run方法完成后线程终止 使用stop方法强行终止线程，但是不推荐使用这个方法，因为stop和suspend及resume一样，都是作废过期的方法，使用它们可能产生不可预料的结果 使用interrupt方法终端线程">
+<meta property="og:description" content="最近项目中需要用到订单号,在csdn上找到一款根据时间,id,以及machineId,如果并发过大,也可以再用上thread的id,下面贴出代码">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T07:19:08.000Z">
+<meta property="og:updated_time" content="2018-02-27T14:53:34.141Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java线程结束">
-<meta name="twitter:description" content="Thread线程停止在Java中有以下3种方法可以终止正在运行的线程 使用退出标志，是线程正常退出，也就是当run方法完成后线程终止 使用stop方法强行终止线程，但是不推荐使用这个方法，因为stop和suspend及resume一样，都是作废过期的方法，使用它们可能产生不可预料的结果 使用interrupt方法终端线程">
+<meta name="twitter:title" content="生成订单号18位不重复数字">
+<meta name="twitter:description" content="最近项目中需要用到订单号,在csdn上找到一款根据时间,id,以及machineId,如果并发过大,也可以再用上thread的id,下面贴出代码">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="sxl5513.github.io/2017/09/14/java线程结束/"/>
+  <link rel="canonical" href="sxl5513.github.io/2018/02/27/生成订单号18位不重复数字/"/>
 
 
 
 
 
-  <title>java线程结束 | 有颜之地</title>
+  <title>生成订单号18位不重复数字 | 有颜之地</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="sxl5513.github.io/2017/09/14/java线程结束/">
+    <link itemprop="mainEntityOfPage" href="sxl5513.github.io/2018/02/27/生成订单号18位不重复数字/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Anber">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java线程结束</h1>
+          <h1 class="post-title" itemprop="name headline">生成订单号18位不重复数字</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-14T11:13:20+08:00">
-                2017-09-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T22:36:40+08:00">
+                2018-02-27
               </time>
             
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/09/14/java线程结束/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/14/java线程结束/" itemprop="commentCount"></span>
+                <a href="/2018/02/27/生成订单号18位不重复数字/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/02/27/生成订单号18位不重复数字/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -342,7 +342,7 @@
 
           
           
-             <span id="/2017/09/14/java线程结束/" class="leancloud_visitors" data-flag-title="java线程结束">
+             <span id="/2018/02/27/生成订单号18位不重复数字/" class="leancloud_visitors" data-flag-title="生成订单号18位不重复数字">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -373,31 +373,9 @@
       
 
       
-        <h3 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h3><h4 id="线程停止"><a href="#线程停止" class="headerlink" title="线程停止"></a>线程停止</h4><h5 id="在Java中有以下3种方法可以终止正在运行的线程"><a href="#在Java中有以下3种方法可以终止正在运行的线程" class="headerlink" title="在Java中有以下3种方法可以终止正在运行的线程"></a>在Java中有以下3种方法可以终止正在运行的线程</h5><ul>
-<li>使用退出标志，是线程正常退出，也就是当run方法完成后线程终止</li>
-<li>使用stop方法强行终止线程，但是不推荐使用这个方法，因为stop和suspend及resume一样，都是作废过期的方法，使用它们可能产生不可预料的结果</li>
-<li>使用interrupt方法终端线程<a id="more"></a>
-</li>
-</ul>
-<h5 id="在Java的SDK中，Thread-java-类里提供了两种方法"><a href="#在Java的SDK中，Thread-java-类里提供了两种方法" class="headerlink" title="在Java的SDK中，Thread.java 类里提供了两种方法"></a>在Java的SDK中，Thread.java 类里提供了两种方法</h5><ul>
-<li><code>this.interrupt()</code>: 测试当前线程是否已经中断，执行后具有将态度标志置清除为false的功能</li>
-<li><code>this.isInterrupted()</code>: 测试线程是否已经中断，但不清楚状态标志</li>
-</ul>
-<!-- <div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'location.href', // 可选。默认为 location.href
-  owner: 'anber',  //改你自己的名字
-  repo: 'Comments',  //专门储存评论一个GitHub仓库
-  oauth: {
-    client_id: '6476bfc6c5c4ef06f6cd', //改为你自己的，下同
-    client_secret: '98a865b03abf7f47d911f090b2052f3acb1b03e5',
-  },
-})
-gitment.render('container')
-</script> -->
+        <p>最近项目中需要用到订单号,在csdn上找到一款根据时间,id,以及machineId,如果并发过大,也可以再用上thread的id,下面贴出代码</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 42位的时间前缀+10位的节点标识+12位的sequence避免并发的数字（12位不够用时强制得到新的时间前缀）</span><br><span class="line"> * &lt;p&gt;</span><br><span class="line"> * &lt;b&gt;对系统时间的依赖性非常强，需要关闭ntp的时间同步功能，或者当检测到ntp时间调整后，拒绝分配id。</span><br><span class="line"> *</span><br><span class="line"> * @author</span><br><span class="line"> */</span><br><span class="line">public class OrderNoUtil &#123;</span><br><span class="line">//    private final static Logger logger = LoggerFactory.getLogger(IdWorker.class);</span><br><span class="line"></span><br><span class="line">    private final long workerId;</span><br><span class="line">    private final long snsEpoch = 1330328109047L;// 起始标记点，作为基准</span><br><span class="line">    private long sequence;</span><br><span class="line">    private final long workerIdBits = 10L;// 只允许workid的范围为：0-1023</span><br><span class="line">    private final long maxWorkerId = -1L ^ -1L &lt;&lt; this.workerIdBits;// 1023,1111111111,10位</span><br><span class="line">    private final long sequenceBits = 12L;// sequence值控制在0-4095</span><br><span class="line"></span><br><span class="line">    private final long workerIdShift = this.sequenceBits;// 12</span><br><span class="line">    private final long timestampLeftShift = this.sequenceBits + this.workerIdBits;// 22</span><br><span class="line">    private final long sequenceMask = -1L ^ -1L &lt;&lt; this.sequenceBits;// 4095,111111111111,12位</span><br><span class="line"></span><br><span class="line">    private long lastTimestamp = -1L;</span><br><span class="line"></span><br><span class="line">    &#123;</span><br><span class="line">        sequence = Long.parseLong(PropertiesUtil.getProperty(&quot;machine.id&quot;));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public OrderNoUtil(long workerId) &#123;</span><br><span class="line">        super();</span><br><span class="line">        if (workerId &gt; this.maxWorkerId || workerId &lt; 0) &#123;// workid &lt; 1024[10位：2的10次方]</span><br><span class="line">            throw new IllegalArgumentException(String.format(&quot;worker Id can&apos;t be greater than %d or less than 0&quot;, this.maxWorkerId));</span><br><span class="line">        &#125;</span><br><span class="line">        this.workerId = workerId;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public synchronized long nextId() throws Exception &#123;</span><br><span class="line">        long timestamp = this.timeGen();</span><br><span class="line">        if (this.lastTimestamp == timestamp) &#123;// 如果上一个timestamp与新产生的相等，则sequence加一(0-4095循环)，下次再使用时sequence是新值</span><br><span class="line">            //System.out.println(&quot;lastTimeStamp:&quot; + lastTimestamp);</span><br><span class="line">            this.sequence = this.sequence + 1 &amp; this.sequenceMask;</span><br><span class="line">            if (this.sequence == 0) &#123;</span><br><span class="line">                timestamp = this.tilNextMillis(this.lastTimestamp);// 重新生成timestamp</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123;</span><br><span class="line">            this.sequence = 0;</span><br><span class="line">        &#125;</span><br><span class="line">        if (timestamp &lt; this.lastTimestamp) &#123;</span><br><span class="line">//            logger.error(String.format(&quot;Clock moved backwards.Refusing to generate id for %d milliseconds&quot;, (this.lastTimestamp - timestamp)));</span><br><span class="line">            throw new Exception(String.format(&quot;Clock moved backwards.Refusing to generate id for %d milliseconds&quot;, (this.lastTimestamp - timestamp)));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        this.lastTimestamp = timestamp;</span><br><span class="line">        // 生成的timestamp</span><br><span class="line">        return timestamp - this.snsEpoch &lt;&lt; this.timestampLeftShift | this.workerId &lt;&lt; this.workerIdShift | this.sequence;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 保证返回的毫秒数在参数之后</span><br><span class="line">     *</span><br><span class="line">     * @param lastTimestamp</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    private long tilNextMillis(long lastTimestamp) &#123;</span><br><span class="line">        long timestamp = this.timeGen();</span><br><span class="line">        while (timestamp &lt;= lastTimestamp) &#123;</span><br><span class="line">            timestamp = this.timeGen();</span><br><span class="line">        &#125;</span><br><span class="line">        return timestamp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 获得系统当前毫秒数</span><br><span class="line">     *</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    private long timeGen() &#123;</span><br><span class="line">        return System.currentTimeMillis();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">//    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">//        OrderNoUtil iw1 = new OrderNoUtil(0);</span><br><span class="line">////        IdWorker iw2 = new IdWorker(2);</span><br><span class="line">////        IdWorker iw3 = new IdWorker(3);</span><br><span class="line">//        Set&lt;String&gt; strSet = Sets.newHashSet();</span><br><span class="line">//        for(int i = 0; i &lt; 10000000; i++) &#123;</span><br><span class="line">//            String str = iw1.nextId() + &quot;&quot;;</span><br><span class="line">//            strSet.add(str);</span><br><span class="line">//        &#125;</span><br><span class="line">//        System.out.println(strSet.size());</span><br><span class="line">//    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -439,7 +417,7 @@ gitment.render('container')
       
         <div class="post-tags">
           
-            <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -452,15 +430,15 @@ gitment.render('container')
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/07/搞懂Websocket原理/" rel="next" title="搞懂Websocket原理">
+                <i class="fa fa-chevron-left"></i> 搞懂Websocket原理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/31/yayun框架文档/" rel="prev" title="ssh框架文档">
-                ssh框架文档 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -515,17 +493,8 @@ gitment.render('container')
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -625,22 +594,6 @@ gitment.render('container')
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Thread"><span class="nav-number">1.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线程停止"><span class="nav-number">1.1.</span> <span class="nav-text">线程停止</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#在Java中有以下3种方法可以终止正在运行的线程"><span class="nav-number">1.1.1.</span> <span class="nav-text">在Java中有以下3种方法可以终止正在运行的线程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在Java的SDK中，Thread-java-类里提供了两种方法"><span class="nav-number">1.1.2.</span> <span class="nav-text">在Java的SDK中，Thread.java 类里提供了两种方法</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
