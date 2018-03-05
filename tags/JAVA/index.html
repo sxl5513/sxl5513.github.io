@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="有颜之地">
-<meta property="og:url" content="sxl5513.github.io/tags/JAVA/index.html">
+<meta property="og:url" content="sxl5513.github.io/tags/java/index.html">
 <meta property="og:site_name" content="有颜之地">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="sxl5513.github.io/tags/JAVA/"/>
+  <link rel="canonical" href="sxl5513.github.io/tags/java/"/>
 
 
 
 
 
-  <title>标签: JAVA | 有颜之地</title>
+  <title>标签: java | 有颜之地</title>
   
 
 
@@ -251,7 +251,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>JAVA<small>标签</small>
+        <h1>java<small>标签</small>
         </h1>
       </div>
 
@@ -263,37 +263,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/11/01/java通信杂谈/" itemprop="url">
+            <a class="post-title-link" href="/2018/02/27/生成订单号18位不重复数字/" itemprop="url">
               
-                <span itemprop="name">JAVA通信杂谈</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-01T15:02:43+08:00"
-              content="2017-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/01/杂论Spring/" itemprop="url">
-              
-                <span itemprop="name">Spring杂论</span>
+                <span itemprop="name">生成订单号18位不重复数字</span>
               
             </a>
         
@@ -301,65 +273,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-01T13:58:04+08:00"
-              content="2017-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/31/yayun框架文档/" itemprop="url">
-              
-                <span itemprop="name">ssh框架文档</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-31T10:41:02+08:00"
-              content="2017-10-31" >
-          10-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/14/java线程结束/" itemprop="url">
-              
-                <span itemprop="name">java线程结束</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-14T11:13:20+08:00"
-              content="2017-09-14" >
-          09-14
+              datetime="2018-02-27T22:36:40+08:00"
+              content="2018-02-27" >
+          02-27
         </time>
       </div>
 
@@ -492,7 +408,31 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://shenyizhou.github.io/" title="orion" target="_blank">orion</a>
+                    <a href="https://annjun1224.github.io/" title="Annjun" target="_blank">Annjun</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://junlegao.github.io/" title="GorgeGao" target="_blank">GorgeGao</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lcdlovel.github.io/" title="Lovel" target="_blank">Lovel</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://shenyizhou.github.io/" title="Orion" target="_blank">Orion</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://sxl5513.github.io/" title="Sxl" target="_blank">Sxl</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.terenceyu.top/" title="Terenceyu" target="_blank">Terenceyu</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://xiaoke33i.github.io/" title="Xiaoke" target="_blank">Xiaoke</a>
                   </li>
                 
               </ul>
@@ -758,6 +698,79 @@
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
       var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+er);
 
       query.equalTo("url", url);
       query.find({
