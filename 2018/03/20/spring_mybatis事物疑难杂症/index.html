@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JAVA,Spring,mybatis," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="有颜之地">
-<meta property="og:url" content="sxl5513.github.io/tags/JAVA/index.html">
+<meta name="description" content="今天调试多个dao层的service接口时,发现事物失效了,在数据库中产生了一条数据,但已经抛出了RuntimeException.看到这个马上检查spring配置文件中事物配置,调试了半天,依旧存在这个问题,写了这么久的项目,不应该出错的.然后就是各种百度,Google,好半天没有成果,最后终于发现是扫包问题. 在spring-mvc配置文件中扫包中包含了service层,spring如果要使事">
+<meta name="keywords" content="JAVA,Spring,mybatis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spring-mybatis事物疑难杂症">
+<meta property="og:url" content="sxl5513.github.io/2018/03/20/spring_mybatis事物疑难杂症/index.html">
 <meta property="og:site_name" content="有颜之地">
+<meta property="og:description" content="今天调试多个dao层的service接口时,发现事物失效了,在数据库中产生了一条数据,但已经抛出了RuntimeException.看到这个马上检查spring配置文件中事物配置,调试了半天,依旧存在这个问题,写了这么久的项目,不应该出错的.然后就是各种百度,Google,好半天没有成果,最后终于发现是扫包问题. 在spring-mvc配置文件中扫包中包含了service层,spring如果要使事">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-20T13:17:42.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有颜之地">
+<meta name="twitter:title" content="spring-mybatis事物疑难杂症">
+<meta name="twitter:description" content="今天调试多个dao层的service接口时,发现事物失效了,在数据库中产生了一条数据,但已经抛出了RuntimeException.看到这个马上检查spring配置文件中事物配置,调试了半天,依旧存在这个问题,写了这么久的项目,不应该出错的.然后就是各种百度,Google,好半天没有成果,最后终于发现是扫包问题. 在spring-mvc配置文件中扫包中包含了service层,spring如果要使事">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="sxl5513.github.io/tags/JAVA/"/>
+  <link rel="canonical" href="sxl5513.github.io/2018/03/20/spring_mybatis事物疑难杂症/"/>
 
 
 
 
 
-  <title>标签: JAVA | 有颜之地</title>
+  <title>spring-mybatis事物疑难杂症 | 有颜之地</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,222 +249,221 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>JAVA<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="sxl5513.github.io/2018/03/20/spring_mybatis事物疑难杂症/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Anber">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有颜之地">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/20/spring_mybatis事物疑难杂症/" itemprop="url">
-              
-                <span itemprop="name">spring-mybatis事物疑难杂症</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">spring-mybatis事物疑难杂症</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-20T19:49:11+08:00"
-              content="2018-03-20" >
-          03-20
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T19:49:11+08:00">
+                2018-03-20
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/后端/" itemprop="url" rel="index">
+                    <span itemprop="name">后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/20/spring_mybatis事物疑难杂症/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/20/spring_mybatis事物疑难杂症/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/03/20/spring_mybatis事物疑难杂症/" class="leancloud_visitors" data-flag-title="spring-mybatis事物疑难杂症">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/18/JAVA内存模型/" itemprop="url">
-              
-                <span itemprop="name">JAVA内存模型</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-18T11:39:58+08:00"
-              content="2018-03-18" >
-          03-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/27/生成订单号18位不重复数字/" itemprop="url">
-              
-                <span itemprop="name">生成订单号18位不重复数字</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-27T22:36:40+08:00"
-              content="2018-02-27" >
-          02-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/01/java通信杂谈/" itemprop="url">
-              
-                <span itemprop="name">JAVA通信杂谈</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-01T15:02:43+08:00"
-              content="2017-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/01/杂论Spring/" itemprop="url">
-              
-                <span itemprop="name">Spring杂论</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-01T13:58:04+08:00"
-              content="2017-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/31/yayun框架文档/" itemprop="url">
-              
-                <span itemprop="name">ssh框架文档</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-31T10:41:02+08:00"
-              content="2017-10-31" >
-          10-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/14/java线程结束/" itemprop="url">
-              
-                <span itemprop="name">java线程结束</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-14T11:13:20+08:00"
-              content="2017-09-14" >
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>今天调试多个dao层的service接口时,发现事物失效了,在数据库中产生了一条数据,但已经抛出了<br>RuntimeException.看到这个马上检查spring配置文件中事物配置,调试了半天,依旧存在这个问题,<br>写了这么久的项目,不应该出错的.然后就是各种百度,Google,好半天没有成果,最后终于发现是扫包问题.</p>
+<p>在spring-mvc配置文件中扫包中包含了service层,spring如果要使事务生效，就需要cglib为对应service类生成代理子类，在spring.xml中已经生成了代理类，而在spring-mvc.xml中，又重新扫描了一遍，使得原先cglib生成的代理子类失效，从而事务拦截也失效。</p>
+<p>spring-mvc.xml配置文件中扫包只扫controller层的</p>
+<p>spring.xml配置文件中剔除controller层的扫包,也就是加上这句<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.anber"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:exclude-filter</span> <span class="attr">type</span>=<span class="string">"annotation"</span> <span class="attr">expression</span>=<span class="string">"org.springframework.stereotype.Controller"</span>&gt;</span><span class="tag">&lt;/<span class="name">context:exclude-filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Anber 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+          
+            <a href="/tags/Spring/" rel="tag"># Spring</a>
+          
+            <a href="/tags/mybatis/" rel="tag"># mybatis</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/18/JAVA内存模型/" rel="next" title="JAVA内存模型">
+                <i class="fa fa-chevron-left"></i> JAVA内存模型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -467,6 +471,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -749,6 +760,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
